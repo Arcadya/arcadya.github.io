@@ -1,0 +1,130 @@
+body {
+	background: #333333;
+	background: -webkit-linear-gradient(left,#111111, #333333, #111111);
+	background: -o-linear-gradient(left,#111111, #333333, #111111);
+	background: -moz-linear-gradient(left,#111111, #333333, #111111);
+	background: linear-gradient(left,#111111, #333333, #111111);
+}
+
+.p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+	color: white !important;
+}
+
+.nav-pills>li>a {
+	background: #fff;
+	background: -webkit-linear-gradient(#fff, #fff, #333);
+	background: -webkit-linear-gradient(#fff, #fff, #333);
+	background: -o-linear-gradient(#fff, #fff, #333);
+	background: -moz-linear-gradient(#fff, #fff, #333);
+	background: linear-gradient(#fff, #fff, #333);
+	border: 1px solid black !important;
+	color: red !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background: #900;
+	background: -webkit-linear-gradient(#900, #900, #333);
+	background: -webkit-linear-gradient(#900, #900, #333);
+	background: -o-linear-gradient(#900, #900, #333);
+	background: -moz-linear-gradient(#900, #900, #333);
+	background: linear-gradient(#900, #900, #333);
+	color: white !important;
+}
+
+.nav-tabs {
+	border-bottom: 0px !important;
+	margin-left: 12px;
+}
+
+.nav-tabs>li>a {
+	background: #fff;
+	background: -webkit-linear-gradient(#fff, #fff, #333);
+	background: -webkit-linear-gradient(#fff, #fff, #333);
+	background: -o-linear-gradient(#fff, #fff, #333);
+	background: -moz-linear-gradient(#fff, #fff, #333);
+	background: linear-gradient(#fff, #fff, #333);
+	border: 1px solid black !important;
+	border-radius: 5px 5px 0 0 !important;
+	color: red !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	background: #900;
+	background: -webkit-linear-gradient(#900, #900, #333);
+	background: -webkit-linear-gradient(#900, #900, #333);
+	background: -o-linear-gradient(#900, #900, #333);
+	background: -moz-linear-gradient(#900, #900, #333);
+	background: linear-gradient(#900, #900, #333);
+	color: white !important;
+}
+
+.team {
+	border: 2px solid black;
+	border-radius: 15px 50px;
+	width: 1140px;
+	height: 658px;
+	margin: auto;
+	background: #900;
+	background: -webkit-linear-gradient(#900, #000, #aaa);
+	background: -webkit-linear-gradient(#900, #000, #aaa);
+	background: -o-linear-gradient(#900, #000, #aaa);
+	background: -moz-linear-gradient(#900, #000, #aaa);
+	background: linear-gradient(#900, #000, #aaa);
+}
+
+.trainer {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+
+.trainer img, .activepokemon img, .inactivepokemon img {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+p.trainername {
+	font-family: Impact;
+	font-size: 75px;
+	display: inline-block;
+	text-align: center;
+	height: 100px;
+	position: absolute;
+	text-shadow:
+	-3px -3px 0 #000,
+	3px -3px 0 #000,
+	-3px 3px 0 #000,
+	3px 3px 0 #000;
+}
+
+.boxed {
+	display: block;
+	width: 1120px;
+	height: 539px;
+	margin: auto;
+}
+
+.activepokemon {
+	border: 3px solid black;
+	border-radius: 15px 50px;
+	background-image: url("bg.png");
+	display: inline-block;
+	height: 175px;
+	width: 220px;
+	position: relative;
+}
+
+.inactivepokemon {
+	border: 3px solid black;
+	border-radius: 15px 50px;
+	background-image: url("bg2.png");
+	display: inline-block;
+	height: 175px;
+	width: 220px;
+	position: relative;
+}
