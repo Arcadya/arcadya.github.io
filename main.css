@@ -117,6 +117,7 @@ p.trainername {
 	height: 175px;
 	width: 220px;
 	position: relative;
+	overflow: hidden;
 }
 
 .inactivepokemon {
@@ -127,4 +128,6 @@ p.trainername {
 	height: 175px;
 	width: 220px;
 	position: relative;
+	overflow: hidden;
+	
 }
