@@ -1,2 +1,2 @@
-# pokemon
-A site for a Pokémon Tournament
+# story
+A site for an interactive story.

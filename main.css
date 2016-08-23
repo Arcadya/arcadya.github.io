@@ -1,133 +1,208 @@
-body {
-	background: #333333;
-	background: -webkit-linear-gradient(left,#111111, #333333, #111111);
-	background: -o-linear-gradient(left,#111111, #333333, #111111);
-	background: -moz-linear-gradient(left,#111111, #333333, #111111);
-	background: linear-gradient(left,#111111, #333333, #111111);
+html,body {
+    background: black !important;
 }
 
-.p, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
-	color: white !important;
+@font-face {
+    font-family: ladyice;
+    src: url(ladyice.ttf);
+}
+
+::selection {
+    background: transparent;
+    color: black;
+    text-shadow: 0px 0px 5px #0ef, 0px 0px 5px #0ef, 0px 0px 5px #0ef;
+}
+
+::-moz-selection {
+    background: transparent;
+    color: black;
+    text-shadow: 0px 0px 5px #0ef, 0px 0px 5px #0ef, 0px 0px 5px #0ef;
+}
+
+#header {
+    background: url(images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 10;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#header>img {
+	max-width: 100%;
+}
+
+#about {
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 50vh;
+    min-height: 50vh;
+}
+
+#about>p {
+    color: #def;
+    margin-top: 30px;
+    font-family: ladyice;
+    font-size: 3vh;
+    text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+}
+
+#jump {
+    position: absolute;
+    bottom: 25px;
+    width: 76px;
+    height: 53px;
+    z-index: 2;
+    left: 50%;
+    margin: 0 0 0 -38px;
+}
+
+#jump>img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#main>h1 {
+    color: white !important;
+    font-size: 50px !important;
+    text-align: center;
+    text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 10px white, 0px 0px 20px #0fe;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#main {
+    text-align: justify;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto 0px;
+    background: black;
+    font-family: "Book Antiqua";
+    color: #ace;
+    margin-bottom: 50px;
+    padding: 0px 15px 10px 15px;
+}
+
+#main p {
+    text-indent: 50px;
+    font-size: 20px;
+    min-width: 300px;
 }
 
 .nav-pills>li>a {
-	background: #fff;
-	background: -webkit-linear-gradient(#fff, #fff, #333);
-	background: -webkit-linear-gradient(#fff, #fff, #333);
-	background: -o-linear-gradient(#fff, #fff, #333);
-	background: -moz-linear-gradient(#fff, #fff, #333);
-	background: linear-gradient(#fff, #fff, #333);
-	border: 1px solid black !important;
-	color: red !important;
+    display: inline-block;
+    height: 75px;
+    max-width: 985px;
+    min-width: 285px;
+    padding: 0px !important;
+    box-shadow: 0px 0px 15px #0ef;
+    background: #090909 !important;
+    cursor: pointer;
+}
+
+.nav-pills>li>a>p {
+	padding-left: 5px;
+	padding-right: 5px;
+    text-indent: 0px !important;
+    text-align: center !important;
+    line-height: 18px;
+    white-space: pre-wrap;
+    width: 100%;
+    font-size: 18px !important;
+    color: white;
+    text-shadow: 0px 0px 5px #0ab, 0px 0px 10px #0ab, 0px 0px 20px #0ab;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	background: #900;
-	background: -webkit-linear-gradient(#900, #900, #333);
-	background: -webkit-linear-gradient(#900, #900, #333);
-	background: -o-linear-gradient(#900, #900, #333);
-	background: -moz-linear-gradient(#900, #900, #333);
-	background: linear-gradient(#900, #900, #333);
-	color: white !important;
+    background: url(images/bg.jpg) 1000px black !important;
 }
 
-.nav-tabs {
-	border-bottom: 0px !important;
-	margin-left: 12px;
+.nav-pills>li.active>a>p, .nav-pills>li.active>a>p:focus, .nav-pills>li.active>a>p:hover {
+    text-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 20px black;
 }
 
-.nav-tabs>li>a {
-	background: #fff;
-	background: -webkit-linear-gradient(#fff, #fff, #333);
-	background: -webkit-linear-gradient(#fff, #fff, #333);
-	background: -o-linear-gradient(#fff, #fff, #333);
-	background: -moz-linear-gradient(#fff, #fff, #333);
-	background: linear-gradient(#fff, #fff, #333);
-	border: 1px solid black !important;
-	border-radius: 5px 5px 0 0 !important;
-	color: red !important;
+span {
+    text-indent: 0px;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-	background: #900;
-	background: -webkit-linear-gradient(#900, #900, #333);
-	background: -webkit-linear-gradient(#900, #900, #333);
-	background: -o-linear-gradient(#900, #900, #333);
-	background: -moz-linear-gradient(#900, #900, #333);
-	background: linear-gradient(#900, #900, #333);
-	color: white !important;
+[data-tooltip] {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    text-decoration:  ;
 }
 
-.team {
-	border: 2px solid black;
-	border-radius: 15px 50px;
-	width: 1140px;
-	height: 658px;
-	margin: auto;
-	background: #900;
-	background: -webkit-linear-gradient(#900, #000, #aaa);
-	background: -webkit-linear-gradient(#900, #000, #aaa);
-	background: -o-linear-gradient(#900, #000, #aaa);
-	background: -moz-linear-gradient(#900, #000, #aaa);
-	background: linear-gradient(#900, #000, #aaa);
+/* Tooltip styling */
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    white-space: pre-wrap;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 100px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px #0ef;
 }
 
-.trainer {
-	display: inline-block;
-	height: 100px;
-	width: 100px;
-	position: relative;
+/* Dynamic horizontal centering */
+[data-tooltip-position="top"]:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
-.trainer img, .activepokemon img, .inactivepokemon img {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%)
+[data-tooltip-position="top"]:before {
+    bottom: 100%;
+    margin-bottom: 6px;
 }
 
-p.trainername {
-	font-family: Impact;
-	font-size: 75px;
-	display: inline-block;
-	text-align: center;
-	height: 100px;
-	position: absolute;
-	text-shadow:
-	-3px -3px 0 #000,
-	3px -3px 0 #000,
-	-3px 3px 0 #000,
-	3px 3px 0 #000;
+/* Tooltip arrow styling/placement */
+[data-tooltip]:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
 }
 
-.boxed {
-	display: block;
-	width: 1120px;
-	height: 539px;
-	margin: auto;
+/* Dynamic horizontal centering for the tooltip */
+[data-tooltip-position="top"]:after {
+    left: 50%;
+    margin-left: -6px;
 }
 
-.activepokemon {
-	border: 3px solid black;
-	border-radius: 15px 50px;
-	background-image: url("bg.png");
-	display: inline-block;
-	height: 175px;
-	width: 220px;
-	position: relative;
-	overflow: hidden;
+/* Dynamic vertical centering for the tooltip */
+[data-tooltip-position="top"]:after {
+    bottom: 100%;
+    border-width: 6px 6px 0;
+    border-top-color: #000;
 }
 
-.inactivepokemon {
-	border: 3px solid black;
-	border-radius: 15px 50px;
-	background-image: url("bg2.png");
-	display: inline-block;
-	height: 175px;
-	width: 220px;
-	position: relative;
-	overflow: hidden;
-	
+/* Show the tooltip when hovering */
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
 }
